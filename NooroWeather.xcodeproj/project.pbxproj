@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CA45D8B32D14130D00E18B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA45D89A2D14130C00E18B23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA45D8A12D14130C00E18B23;
+			remoteInfo = NooroWeather;
+		};
+		CA45D8BD2D14130D00E18B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA45D89A2D14130C00E18B23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA45D8A12D14130C00E18B23;
+			remoteInfo = NooroWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA45D8A22D14130C00E18B23 /* NooroWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NooroWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA45D8B22D14130D00E18B23 /* NooroWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NooroWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA45D8BC2D14130D00E18B23 /* NooroWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NooroWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CA45D8A42D14130C00E18B23 /* NooroWeather */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NooroWeather;
+			sourceTree = "<group>";
+		};
+		CA45D8B52D14130D00E18B23 /* NooroWeatherTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NooroWeatherTests;
+			sourceTree = "<group>";
+		};
+		CA45D8BF2D14130D00E18B23 /* NooroWeatherUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NooroWeatherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA45D89F2D14130C00E18B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA45D8AF2D14130D00E18B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA45D8B92D14130D00E18B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA45D8992D14130C00E18B23 = {
+			isa = PBXGroup;
+			children = (
+				CA45D8A42D14130C00E18B23 /* NooroWeather */,
+				CA45D8B52D14130D00E18B23 /* NooroWeatherTests */,
+				CA45D8BF2D14130D00E18B23 /* NooroWeatherUITests */,
+				CA45D8A32D14130C00E18B23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA45D8A32D14130C00E18B23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA45D8A22D14130C00E18B23 /* NooroWeather.app */,
+				CA45D8B22D14130D00E18B23 /* NooroWeatherTests.xctest */,
+				CA45D8BC2D14130D00E18B23 /* NooroWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA45D8A12D14130C00E18B23 /* NooroWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA45D8C62D14130D00E18B23 /* Build configuration list for PBXNativeTarget "NooroWeather" */;
+			buildPhases = (
+				CA45D89E2D14130C00E18B23 /* Sources */,
+				CA45D89F2D14130C00E18B23 /* Frameworks */,
+				CA45D8A02D14130C00E18B23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CA45D8A42D14130C00E18B23 /* NooroWeather */,
+			);
+			name = NooroWeather;
+			packageProductDependencies = (
+			);
+			productName = NooroWeather;
+			productReference = CA45D8A22D14130C00E18B23 /* NooroWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA45D8B12D14130D00E18B23 /* NooroWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA45D8C92D14130D00E18B23 /* Build configuration list for PBXNativeTarget "NooroWeatherTests" */;
+			buildPhases = (
+				CA45D8AE2D14130D00E18B23 /* Sources */,
+				CA45D8AF2D14130D00E18B23 /* Frameworks */,
+				CA45D8B02D14130D00E18B23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA45D8B42D14130D00E18B23 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA45D8B52D14130D00E18B23 /* NooroWeatherTests */,
+			);
+			name = NooroWeatherTests;
+			packageProductDependencies = (
+			);
+			productName = NooroWeatherTests;
+			productReference = CA45D8B22D14130D00E18B23 /* NooroWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA45D8BB2D14130D00E18B23 /* NooroWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA45D8CC2D14130D00E18B23 /* Build configuration list for PBXNativeTarget "NooroWeatherUITests" */;
+			buildPhases = (
+				CA45D8B82D14130D00E18B23 /* Sources */,
+				CA45D8B92D14130D00E18B23 /* Frameworks */,
+				CA45D8BA2D14130D00E18B23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA45D8BE2D14130D00E18B23 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA45D8BF2D14130D00E18B23 /* NooroWeatherUITests */,
+			);
+			name = NooroWeatherUITests;
+			packageProductDependencies = (
+			);
+			productName = NooroWeatherUITests;
+			productReference = CA45D8BC2D14130D00E18B23 /* NooroWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA45D89A2D14130C00E18B23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					CA45D8A12D14130C00E18B23 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					CA45D8B12D14130D00E18B23 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CA45D8A12D14130C00E18B23;
+					};
+					CA45D8BB2D14130D00E18B23 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CA45D8A12D14130C00E18B23;
+					};
+				};
+			};
+			buildConfigurationList = CA45D89D2D14130C00E18B23 /* Build configuration list for PBXProject "NooroWeather" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA45D8992D14130C00E18B23;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CA45D8A32D14130C00E18B23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA45D8A12D14130C00E18B23 /* NooroWeather */,
+				CA45D8B12D14130D00E18B23 /* NooroWeatherTests */,
+				CA45D8BB2D14130D00E18B23 /* NooroWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA45D8A02D14130C00E18B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA45D8B02D14130D00E18B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA45D8BA2D14130D00E18B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA45D89E2D14130C00E18B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA45D8AE2D14130D00E18B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA45D8B82D14130D00E18B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA45D8B42D14130D00E18B23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA45D8A12D14130C00E18B23 /* NooroWeather */;
+			targetProxy = CA45D8B32D14130D00E18B23 /* PBXContainerItemProxy */;
+		};
+		CA45D8BE2D14130D00E18B23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA45D8A12D14130C00E18B23 /* NooroWeather */;
+			targetProxy = CA45D8BD2D14130D00E18B23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA45D8C42D14130D00E18B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA45D8C52D14130D00E18B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA45D8C72D14130D00E18B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NooroWeather/Preview Content\"";
+				DEVELOPMENT_TEAM = HV64XLDJ5T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deeohcee.NooroWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA45D8C82D14130D00E18B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NooroWeather/Preview Content\"";
+				DEVELOPMENT_TEAM = HV64XLDJ5T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deeohcee.NooroWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA45D8CA2D14130D00E18B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV64XLDJ5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deeohcee.NooroWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NooroWeather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NooroWeather";
+			};
+			name = Debug;
+		};
+		CA45D8CB2D14130D00E18B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV64XLDJ5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deeohcee.NooroWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NooroWeather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NooroWeather";
+			};
+			name = Release;
+		};
+		CA45D8CD2D14130D00E18B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV64XLDJ5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deeohcee.NooroWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NooroWeather;
+			};
+			name = Debug;
+		};
+		CA45D8CE2D14130D00E18B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV64XLDJ5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deeohcee.NooroWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NooroWeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA45D89D2D14130C00E18B23 /* Build configuration list for PBXProject "NooroWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA45D8C42D14130D00E18B23 /* Debug */,
+				CA45D8C52D14130D00E18B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA45D8C62D14130D00E18B23 /* Build configuration list for PBXNativeTarget "NooroWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA45D8C72D14130D00E18B23 /* Debug */,
+				CA45D8C82D14130D00E18B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA45D8C92D14130D00E18B23 /* Build configuration list for PBXNativeTarget "NooroWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA45D8CA2D14130D00E18B23 /* Debug */,
+				CA45D8CB2D14130D00E18B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA45D8CC2D14130D00E18B23 /* Build configuration list for PBXNativeTarget "NooroWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA45D8CD2D14130D00E18B23 /* Debug */,
+				CA45D8CE2D14130D00E18B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA45D89A2D14130C00E18B23 /* Project object */;
+}
