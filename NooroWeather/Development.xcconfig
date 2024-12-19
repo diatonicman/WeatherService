@@ -1,0 +1,14 @@
+//
+//  Development.xcconfig
+//  NooroWeather
+//
+//  Created by Scott Anderson on 12/19/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+WEATHER_SERVICE_SCHEME = https
+WEATHER_SERVICE_HOST = api.weatherapi.com
+WEATHER_SERVICE_PATH = /v1/current.json
+WEATHER_SERVICE_API_KEY = 7ae557f395f44dbf80674757241912
