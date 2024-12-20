@@ -7,15 +7,50 @@
 
 import Foundation
 
-struct WeatherServiceJSON : WeatherServiceProtocol {
+struct WeatherServiceJSON : WeatherService {
     
     static let schemeKey    = "WEATHER_SERVICE_SCHEME"
     static let hostKey      = "WEATHER_SERVICE_HOST"
     static let pathKey      = "WEATHER_SERVICE_PATH"
     static let apiKeyKey    = "WEATHER_SERVICE_API_KEY"
     
+    let decoder = JSONDecoder()
+    
     func fetchWeather(for request: WeatherFetchRequest) async throws -> WeatherFetchResponse {
-        throw WeatherServiceError.cityNotFound
+        
+        guard let url = buildURL(for: request) else {
+            throw WeatherServiceError.invalidResponse
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw WeatherServiceError.invalidResponse
+        }
+        
+        if httpResponse.statusCode != 200 {
+            throw WeatherServiceError.invalidResponse
+        }
+        
+        let weatherResponse = try decoder.decode(WeatherFetchJSONResponse.self, from: data)
+        
+        return try buildResponse(from: weatherResponse)
+    }
+    
+    func buildResponse(from response: WeatherFetchJSONResponse) throws -> WeatherFetchResponse {
+        
+        guard let iconURL = URL(string: "https:\(response.current.condition.icon)") else {
+            throw WeatherServiceError.invalidResponse
+        }
+        
+        return WeatherFetchResponse(
+            cityName: response.location.name,
+            temperature: response.current.tempF,
+            uvIndex: response.current.uv,
+            conditionDescription: response.current.condition.text,
+            conditionIcon: iconURL,
+            feelsLike: response.current.feelslikeF,
+            humidity: response.current.humidity
+        )
     }
     
     func buildURL(for request: WeatherFetchRequest) -> URL? {
@@ -54,38 +89,34 @@ struct WeatherServiceJSON : WeatherServiceProtocol {
 }
 
 
-//
-// Generated with Quicktype
-//
+/*
+ Generated with Quicktype.
+ 
+ QuickType seems to get confused about Doubles that are whole Integers. eg 35.0 is translated to INT where 35.1 is a Double. Changed intput code to quick type to make sure there are no whole Integers.
+*/
 
 // MARK: - WeatherFetchJSONResponse
 struct WeatherFetchJSONResponse: Codable {
-    let location: Location
-    let current: Current
+    let location: WeatherFetchJSONResponseLocation
+    let current: WeatherFetchJSONResponseCurrent
 }
 
-// MARK: - Current
-struct Current: Codable {
+// MARK: - WeatherFetchJSONResponseCurrent
+struct WeatherFetchJSONResponseCurrent: Codable {
     let lastUpdatedEpoch: Int
     let lastUpdated: String
     let tempC, tempF: Double
     let isDay: Int
-    let condition: Condition
-    let windMph: Double
-    let windKph, windDegree: Int
+    let condition: WeatherFetchJSONResponseCondition
+    let windMph, windKph: Double
+    let windDegree: Int
     let windDir: String
-    let pressureMB: Int
-    let pressureIn, precipMm: Double
-    let precipIn, humidity, cloud: Int
-    let feelslikeC: Double
-    let feelslikeF: Int
-    let windchillC: Double
-    let windchillF: Int
-    let heatindexC, heatindexF: Double
-    let dewpointC: Int
-    let dewpointF: Double
-    let visKM, visMiles, uv: Int
-    let gustMph, gustKph: Double
+    let pressureMB, pressureIn, precipMm, precipIn: Double
+    let humidity, cloud: Int
+    let feelslikeC, feelslikeF, windchillC, windchillF: Double
+    let heatindexC, heatindexF, dewpointC, dewpointF: Double
+    let visKM, visMiles, uv, gustMph: Double
+    let gustKph: Double
 
     enum CodingKeys: String, CodingKey {
         case lastUpdatedEpoch = "last_updated_epoch"
@@ -119,14 +150,14 @@ struct Current: Codable {
     }
 }
 
-// MARK: - Condition
-struct Condition: Codable {
+// MARK: - WeatherFetchJSONResponseCondition
+struct WeatherFetchJSONResponseCondition: Codable {
     let text, icon: String
     let code: Int
 }
 
-// MARK: - Location
-struct Location: Codable {
+// MARK: - WeatherFetchJSONResponseLocation
+struct WeatherFetchJSONResponseLocation: Codable {
     let name, region, country: String
     let lat, lon: Double
     let tzID: String

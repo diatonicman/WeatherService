@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol WeatherServiceProtocol {
+protocol WeatherService {
     func fetchWeather(for request: WeatherFetchRequest) async throws -> WeatherFetchResponse
 }
 
@@ -22,10 +22,11 @@ struct WeatherFetchResponse: Decodable {
     let conditionDescription: String
     let conditionIcon: URL
     let feelsLike: Double
+    let humidity: Int
 }
 
 enum WeatherServiceError: Error {
     case cityNotFound
-    case timeout
     case invalidResponse
+    case timeout
 }
