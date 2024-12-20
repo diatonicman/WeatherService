@@ -27,7 +27,11 @@ struct WeatherServiceJSON : WeatherService {
             throw WeatherServiceError.invalidResponse
         }
         
-        if httpResponse.statusCode != 200 {
+        //Server sends back a 400 response code when it can't find the city
+        if httpResponse.statusCode == 400 {
+            throw WeatherServiceError.cityNotFound
+        }
+        else if httpResponse.statusCode != 200 {
             throw WeatherServiceError.invalidResponse
         }
         

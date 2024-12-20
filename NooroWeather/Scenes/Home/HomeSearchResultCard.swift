@@ -10,9 +10,7 @@ import SwiftUI
 struct HomeSearchResultCard: View {
     
     let viewModel: HomeView.ViewModel
-    let weatherData: WeatherFetchResponse
-    
-    
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -20,20 +18,24 @@ struct HomeSearchResultCard: View {
                 .foregroundColor(.lightGrayBackground)
             HStack {
                 VStack {
-                    Text(weatherData.cityName)
-                        .font(.title)
-
-                    Text("\(Int(weatherData.temperature))°")
-                        .font(.title)
+                    Text(viewModel.searchResult!.cityName)
+                        .font(.system(size: 30, weight: .semibold))
+                    
+                    Text("\(Int(viewModel.searchResult!.temperature))°")
+                        .font(.system(size: 50, weight: .semibold))
                 }
                 .padding(.leading, 20)
                 Spacer()
-                AsyncImage(url: weatherData.conditionIcon)
-                    .padding(.trailing, 20)
+                AsyncImage(url: viewModel.searchResult!.conditionIcon) { result in
+                    result.image?
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: 100, maxHeight: 100)
+                }.padding(.trailing, 20)
             }
         }
         .onTapGesture {
-            viewModel.setPreferredCity(weatherData.cityName)
+            viewModel.setPreferredCity(viewModel.searchResult!.cityName)
         }
     }
 }
@@ -49,5 +51,8 @@ struct HomeSearchResultCard: View {
         humidity: 87
     )
     
-    HomeSearchResultCard(viewModel: HomeView.ViewModel(), weatherData: weatherData)
+    let viewModel = HomeView.ViewModel()
+    viewModel.searchResult = weatherData
+    
+    return HomeSearchResultCard(viewModel: viewModel)
 }

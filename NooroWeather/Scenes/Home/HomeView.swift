@@ -21,6 +21,11 @@ struct HomeView: View {
                 HStack {
                     TextField("Search Location", text: $viewModel.searchText)
                         .padding(.leading, 20)
+                        .onSubmit {
+                            Task {
+                                await viewModel.search()
+                            }
+                        }
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.gray)
                         .padding()
@@ -34,12 +39,16 @@ struct HomeView: View {
             .padding(.horizontal, 30)
             
             if viewModel.searchResult != nil {
-                HomeSearchResultCard(viewModel: viewModel, weatherData: viewModel.searchResult!)
+                HomeSearchResultCard(viewModel: viewModel)
+                    .padding(.horizontal, 30)
+                Spacer()
+            }
+            else if viewModel.searching {
                 Spacer()
             }
             else if viewModel.preferredCity != nil {
-                Spacer()
                 HomeWeatherCard(viewModel.preferredData)
+                    .padding(.top, 50)
                     .task {
                         let weather = await viewModel.getWeather(city: viewModel.preferredCity!)
                         viewModel.preferredData = weather

@@ -15,6 +15,7 @@ extension HomeView {
         var preferredCity: String?
         var preferredData: WeatherFetchResponse?
         var searchResult: WeatherFetchResponse?
+        var searching: Bool = false
         
         var searchText: String = ""
         let weatherService: WeatherService  = WeatherServiceJSON()
@@ -23,12 +24,14 @@ extension HomeView {
             preferredCity = getPreferredCity()
         }
         
+        @MainActor
         func search() async {
             print("Search triggered with \(searchText)")
             if searchText.isEmpty {
                 return
             }
             
+            searching = true
             if let weather = await getWeather(city: searchText) {
                 searchResult = weather
             }
@@ -46,12 +49,14 @@ extension HomeView {
             UserDefaults.standard.string(forKey: preferredCityKey)
         }
         
+        @MainActor
         func setPreferredCity(_ city: String) {
             print("Set Preferred City. \(city)")
             UserDefaults.standard.set(city, forKey: preferredCityKey)
             preferredCity = city
             preferredData = searchResult
             searchResult = nil
+            searching = false
         }
     }
 }
