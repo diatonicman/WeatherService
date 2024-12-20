@@ -1,4 +1,4 @@
-#Weather App
+# Weather App
 
 ## Set Up
 In order to run the app you must compile it with a valid weatherapi api key. You can signup for a key at https://www.weatherapi.com.
