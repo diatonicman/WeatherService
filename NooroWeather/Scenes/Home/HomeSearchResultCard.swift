@@ -18,20 +18,22 @@ struct HomeSearchResultCard: View {
                 .foregroundColor(.lightGrayBackground)
             HStack {
                 VStack {
-                    Text(viewModel.searchResult!.cityName)
+                    Text(viewModel.searchResult?.cityName ?? "")
                         .font(.system(size: 30, weight: .semibold))
                     
-                    Text("\(Int(viewModel.searchResult!.temperature))°")
+                    Text("\(Int(viewModel.searchResult?.temperature ?? 0))°")
                         .font(.system(size: 50, weight: .semibold))
                 }
                 .padding(.leading, 20)
                 Spacer()
-                AsyncImage(url: viewModel.searchResult!.conditionIcon) { result in
-                    result.image?
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(maxWidth: 100, maxHeight: 100)
-                }.padding(.trailing, 20)
+                if let url = viewModel.searchResult?.conditionIcon {
+                    AsyncImage(url: viewModel.searchResult!.conditionIcon) { result in
+                        result.image?
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: 100, maxHeight: 100)
+                    }.padding(.trailing, 20)
+                }
             }
         }
         .onTapGesture {
