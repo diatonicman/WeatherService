@@ -1,9 +1,3 @@
-//
-//  NooroWeatherApp.swift
-//  NooroWeather
-//
-//  Created by Scott Anderson on 12/19/24.
-//
 
 import SwiftUI
 

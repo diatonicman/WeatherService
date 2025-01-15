@@ -1,9 +1,3 @@
-//
-//  HomeSearchResultCard.swift
-//  NooroWeather
-//
-//  Created by Scott Anderson on 12/19/24.
-//
 
 import SwiftUI
 
@@ -26,7 +20,7 @@ struct HomeSearchResultCard: View {
                 }
                 .padding(.leading, 20)
                 Spacer()
-                if let url = viewModel.searchResult?.conditionIcon {
+                if let _ = viewModel.searchResult?.conditionIcon {
                     AsyncImage(url: viewModel.searchResult!.conditionIcon) { result in
                         result.image?
                             .resizable()
