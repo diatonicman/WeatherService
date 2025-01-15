@@ -9,5 +9,5 @@ Edit the Development.xcconfig and edit the the line that says
 `WEATHER_SERVICE_API_KEY = <Enter API Key Here>`
 Replacing \<Enter API Key Here> with your key.
 
-### Release(Simulator)
+### Release
 Edit the Release.xcconfig and perform the same actions as for development.
