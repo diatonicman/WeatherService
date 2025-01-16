@@ -53,11 +53,6 @@
 			path = NooroWeatherTests;
 			sourceTree = "<group>";
 		};
-		CA45D8BF2D14130D00E18B23 /* NooroWeatherUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NooroWeatherUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +85,6 @@
 			children = (
 				CA45D8A42D14130C00E18B23 /* NooroWeather */,
 				CA45D8B52D14130D00E18B23 /* NooroWeatherTests */,
-				CA45D8BF2D14130D00E18B23 /* NooroWeatherUITests */,
 				CA45D8A32D14130C00E18B23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,9 +159,6 @@
 			);
 			dependencies = (
 				CA45D8BE2D14130D00E18B23 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CA45D8BF2D14130D00E18B23 /* NooroWeatherUITests */,
 			);
 			name = NooroWeatherUITests;
 			packageProductDependencies = (
